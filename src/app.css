@@ -1,0 +1,279 @@
+:root {
+  --button-background-color: #007bff;
+  --button-text-color: #fff;
+  --button-background-color-hover: #0056b3;
+  --button-font-size: 16px;
+  --button-font-size-small: 14px;
+  --button-font-weight: 500;
+  --text-color: #000000;
+  --text-font-size: 16px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p {
+  margin: 5px, 0px;
+}
+
+#main {
+  flex-grow: 1; /* Take up remaining space */
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.logo img {
+  height: 48px;
+  margin-right: 10px;
+}
+
+.nextToButton {
+  width: 80%;
+}
+
+.formText {
+  margin: 5px 0px 5px 0px;
+  font-size: var(--text-font-size);
+  word-break: break-all;
+}
+
+.formTextWithButton {
+  margin: 10px 10px 10px 0px;
+  font-size: var(--text-font-size);
+}
+
+.formInput {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid var(--button-background-color);
+  border-radius: 5px;
+  font-size: var(--text-font-size);
+}
+
+.formInput:focus {
+  outline-color: var(--button-background-color-hover);
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.editable-input-field {
+  width: auto;
+  max-width: 100%;
+}
+
+#greenTick {
+  color: green;
+}
+
+#redCross {
+  color: red;
+}
+
+.dropdown-container {
+  margin-right: 10px;
+  font-size: var(--text-font-size);
+}
+
+.dropdown-container:focus {
+  background-color: var(
+    --button-background-color
+  ); /* Set background color when focused */
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li:last-child {
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 10px;
+  width: calc(100vw - 20px);
+  max-width: calc(100vw - 20px);
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: #ffffff;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: left;
+}
+
+.action-button {
+  margin-right: 5px;
+  padding: 10px 10px;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  display: inline-block;
+}
+
+.action-button:hover {
+  background-color: var(--button-background-color-hover);
+}
+
+#edit-button,
+#save-button,
+#restore-button,
+#cancel-button,
+#openFolderButton {
+  margin-left: 3px;
+  margin-right: 0px;
+  padding: 5px 5px;
+  font-size: var(--button-font-size-small);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#textButton,
+#input {
+  display: inline-flex; /* Display text and button inline */
+  align-items: center; /* Align items vertically */
+}
+
+#database_wrapper {
+  overflow-x: auto;
+  width: 100%;
+  margin-left: 20px; /* Adjust as needed */
+  margin-right: 20px; /* Adjust as needed */
+}
+
+#database {
+  width: 100%;
+  border: 1px solid #ddd;
+  overflow: auto;
+}
+
+#databaseElement {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+}
+
+.dataTables_filter,
+.toolbar {
+  position: sticky;
+  right: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#database thead th:hover button {
+  display: inline;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  overflow: auto;
+  overflow-x: auto;
+}
+
+#dialog-close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.dialog .dropdown-container {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.dialog p.formText{
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+#help {
+  width: 66.67%;
+  margin: 0 auto;
+  padding: 10px;
+  word-break: break-word;
+}
+
+#help p {
+  word-break: break-word;
+}

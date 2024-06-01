@@ -1,0 +1,75 @@
+{
+  "name": "jayvee-data-wrangler",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "Jayvee Data Wrangler is a user-friendly tool designed to facilitate data wrangling. It seamlessly guides users through through the process of loading data into a database for further analysis productivity and workflow efficiency. Featuring an immersive interface, it combines a grid-like data display with dynamic summary statistics and a comprehensive set of data-cleaning functions. With Jayvee Data Wrangler, users can effortlessly execute various operations with just a few clicks, instantly update the data display and genereate scripts for the dsl language Jayvee to create ETL-Pipelines.",  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "npm run build && electron .",
+    "build": "tsc",
+    "app": "npm run build && electron-builder -w"
+  },
+  "author": "Elias Pfann",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "electron": "^29.3.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@jvalue/jayvee-interpreter": "^0.4.0",
+    "@types/datatables.net": "^1.12.0",
+    "@types/sqlite3": "^3.1.11",
+    "axios": "^1.6.8",
+    "chardet": "^2.0.0",
+    "chart.js": "^4.4.2",
+    "common-js": "^0.3.8",
+    "commonjs": "^0.0.1",
+    "csv-parser": "^3.0.0",
+    "datatables.net": "^2.0.3",
+    "datatables.net-autofill-dt": "^2.7.0",
+    "datatables.net-buttons-dt": "^3.0.1",
+    "datatables.net-colreorder": "^2.0.1",
+    "datatables.net-colreorder-dt": "^2.0.1",
+    "datatables.net-datetime": "^1.5.2",
+    "datatables.net-dt": "^2.0.3",
+    "datatables.net-fixedcolumns-dt": "^5.0.0",
+    "datatables.net-fixedheader-dt": "^4.0.1",
+    "datatables.net-keytable-dt": "^2.12.0",
+    "datatables.net-responsive-dt": "^3.0.1",
+    "datatables.net-rowgroup-dt": "^1.5.0",
+    "datatables.net-rowreorder-dt": "^1.5.0",
+    "datatables.net-scroller-dt": "^2.4.1",
+    "datatables.net-searchbuilder-dt": "^1.7.1",
+    "datatables.net-searchpanes-dt": "^2.3.0",
+    "datatables.net-select-dt": "^2.0.1",
+    "datatables.net-staterestore-dt": "^1.4.1",
+    "esm": "^3.2.25",
+    "i18next": "^23.10.0",
+    "i18next-fs-backend": "^2.3.1",
+    "jquery": "^3.7.1",
+    "package.json": "^0.0.0",
+    "queue-typescript": "^1.0.1",
+    "sqlite3": "^5.1.7",
+    "sweetalert2": "^11.6.13"
+  },
+  "build": {
+    "appId": "jayvee-data-wrangler",
+    "productName": "Jayvee Data Wrangler",
+    "directories": {
+      "output": "release"
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "target": "AppImage"
+    },
+    "mac": {
+      "icon": "assets/icon.ico",
+      "target": "dmg"
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis"
+    }   
+  }
+}

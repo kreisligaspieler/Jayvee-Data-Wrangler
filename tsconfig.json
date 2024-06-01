@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@types/node": ["./node_modules/@types/node"]
+    },
+    "target": "es6",
+    "module": "commonjs", // Needed to work in a node environment to acess the file system
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./types"],
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"],
+  "types": ["node"]
+}

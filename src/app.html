@@ -1,0 +1,45 @@
+<!-- Main entry point for the application -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Jayvee Data Wrangler</title>
+    <base href="./" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module"  src="header/loadHeader.js"></script>
+    <script type="module" src="footer/loadFooter.js"></script>
+    <script type="module"  src="main/main.js"></script>
+    <link rel="stylesheet" href="./app.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <div id="main"> 
+      <p class="center" i18n>Welcome to the Jayvee Data Wrangler. This program automatically guides you through the process of loading data from a CSV into a database for further analysis. Throughout the process, you can specify various criteria to filter and preformat your data.
+      </p>
+      <div class="center">
+        <button class="action-button" id="newProjectBtn" i18n>
+          create new project
+        </button>
+        <button class="action-button" id="loadProjectBtn" i18n>
+          load project          
+        </button>
+        <button class="action-button" id="helpBtn"i18n>
+          <i class="fas fa-question-circle"></i>
+        </button>    
+      </div>
+    </div>
+      <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+</html>
