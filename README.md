@@ -1,6 +1,6 @@
 ![Logo](./assets/logo.svg)
 
-This software originated from a master's thesis, which aims to provide a free and open-source software to help researchers and data scientists with data wrangling tasks. The software is designed to be user-friendly. It's designed to help you with data wrangling tasks and automatically create executable scripts for Jayvee. If you have any questions or feedback, please feel free to contact me via E-Mail (jdw@derwebmaster.eu) or GitHub. I hope you enjoy using the Jayvee Data Wrangler!
+This software originated from a master's thesis, which aims to provide a free and open-source software to help researchers and data scientists with data wrangling tasks. The software is designed to be user-friendly. It is also designed to help users to automatically create executable scripts for Jayvee. If you have any questions or feedback, please feel free to contact me via E-Mail (jdw@derwebmaster.eu) or GitHub. I hope you enjoy using the Jayvee Data Wrangler!
 
 # Installation Guide
 
